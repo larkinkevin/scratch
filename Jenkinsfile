@@ -3,7 +3,7 @@
 pipeline {
     agent {
         docker {
-            label "docker"
+            label "rhel7"
             registryUrl "https://docker-registry.pdbld.f5net.com"
             image "bdo/jenkins-worker-ubuntu-16.04:master"
             args "-v /etc/localtime:/etc/localtime:ro" \
